@@ -352,6 +352,14 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
 /* =============
     Typography
 ============= */
@@ -370,3 +378,52 @@ template {
 /* =============
     Footer
 ============= */
+/* =============
+    Nav
+============= */
+#search {
+  display: grid;
+  grid-template-columns: 16px auto 16 px;
+  grid-template-areas: ". search .";
+}
+#search > div {
+  grid-area: navigation;
+}
+
+/* =============
+    hero
+============= */
+#hero img {
+  width: 100%;
+}
+
+/* =============
+    Planning
+============= */
+#planning img {
+  max-width: 100%;
+}
+#planning ul li {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". planning-content .";
+}
+
+/* =============
+    hero-2
+============= */
+#hero-2 img {
+  width: 100%;
+}
+
+/* =============
+    New
+============= */
+#new ul li img {
+  width: 100%;
+}
+#new section {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". new .";
+}
