@@ -375,6 +375,12 @@ ul li {
 /* =============
     Header
 ============= */
+header {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". header-content .";
+}
+
 /* =============
     Footer
 ============= */
@@ -394,7 +400,7 @@ ul li {
     hero
 ============= */
 #hero img {
-  width: 100%;
+  max-width: 100%;
 }
 
 /* =============
@@ -413,17 +419,17 @@ ul li {
     hero-2
 ============= */
 #hero-2 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 /* =============
     New
 ============= */
 #new ul li img {
-  width: 100%;
+  max-width: 100%;
 }
 #new section {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". new .";
+  grid-template-areas: ". new-content .";
 }
