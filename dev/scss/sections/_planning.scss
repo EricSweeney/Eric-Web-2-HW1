@@ -32,5 +32,15 @@
             } 
         }
     }
+
+    @include lg {
+        section{
+            #planning-content{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-template-areas: "planning-content planning-content";
+            } 
+        }
+    }
 }
 

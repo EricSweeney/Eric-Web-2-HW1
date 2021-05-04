@@ -26,3 +26,59 @@
         }
     }
 }
+
+@include md {
+    #new {
+            display: grid;
+            grid-template-areas: "new new";
+            grid-template-columns: repeat(2, 1fr);
+
+            >div {
+                #new-gallery-1 {
+                    grid-area: new;
+                }  
+                #new-gallery-2 {
+                    grid-area: new;
+                } 
+                #new-gallery-3 {
+                    grid-area: new;
+                } 
+                #new-gallery-4 {
+                    grid-area: new;
+                } 
+                #new-gallery-5 {
+                    grid-area: new;
+                }   
+            }
+
+
+    }
+}
+
+@include md {
+    #new {
+            display: grid;
+            grid-template-areas: "new new new";
+            grid-template-columns: repeat(3, 1fr);
+
+            >div {
+                #new-gallery-1 {
+                    grid-area: new;
+                }  
+                #new-gallery-2 {
+                    grid-area: new;
+                } 
+                #new-gallery-3 {
+                    grid-area: new;
+                } 
+                #new-gallery-4 {
+                    grid-area: new;
+                } 
+                #new-gallery-5 {
+                    grid-area: new;
+                }   
+            }
+
+
+    }
+}
