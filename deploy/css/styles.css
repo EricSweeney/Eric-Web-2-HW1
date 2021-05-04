@@ -406,13 +406,21 @@ header {
 /* =============
     Planning
 ============= */
-#planning img {
-  max-width: 100%;
-}
-#planning ul li {
+/* #planning {
+    img {
+        max-width: 100%;
+    }
+    ul {
+        li {
+            display: grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". planning-content .";
+        }
+    }
+} */
+#planning > div ul {
   display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". planning-content .";
+  gap: 16px;
 }
 
 /* =============
@@ -422,14 +430,42 @@ header {
   max-width: 100%;
 }
 
+/* #hero-2 {
+    #hero-2-1 {
+        img {
+            max-width: 100%;
+        }
+    }
+    #hero-2-2 {
+        img {
+            max-width: 100%;
+        }
+    }
+    #hero-2-3 {
+        img {
+            display: none;
+        }
+    }
+} */
 /* =============
     New
 ============= */
-#new ul li img {
-  max-width: 100%;
+/* #new {
+    ul {
+        li{
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+    section {
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". new-content .";
+    }
 }
-#new section {
+*/
+#new > div ul {
   display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". new-content .";
+  gap: 16px;
 }
