@@ -399,10 +399,27 @@ header {
 /* =============
     hero
 ============= */
-#hero img {
-  max-width: 100%;
+#hero > div img {
+  /*max-width: 100%;*/
+  display: block;
+  width: 100%;
 }
 
+@media (min-width: 768px) {
+  #hero-item {
+    display: grid;
+    grid-template-areas: "hero-item hero-item";
+    grid-template-columns: 30% 70%;
+  }
+
+  .hero-left {
+    grid-area: display;
+  }
+
+  .hero-left {
+    grid-area: display;
+  }
+}
 /* =============
     Planning
 ============= */
@@ -421,6 +438,13 @@ header {
 #planning > div ul {
   display: grid;
   gap: 16px;
+}
+@media (min-width: 768px) {
+  #planning section #planning-content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "planning-content planning-content";
+  }
 }
 
 /* =============

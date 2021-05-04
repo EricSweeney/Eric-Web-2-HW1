@@ -22,4 +22,15 @@
             gap: 16px;
         }
     }
+
+    @include md {
+        section{
+            #planning-content{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-template-areas: "planning-content planning-content";
+            } 
+        }
+    }
 }
+

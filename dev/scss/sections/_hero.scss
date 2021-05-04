@@ -3,7 +3,25 @@
 ============= */
 
 #hero {
-    img {
-        max-width: 100%;
+    >div {
+        img {
+            /*max-width: 100%;*/ 
+            display: block;
+            width: 100%
+        }
+    }
+}
+
+@include md {
+    #hero-item{
+        display: grid;
+        grid-template-areas: "hero-item hero-item";
+        grid-template-columns: 30% 70%;
+    }    
+    .hero-left{
+        grid-area: display;
+    }
+    .hero-left{
+        grid-area: display;
     }
 }
