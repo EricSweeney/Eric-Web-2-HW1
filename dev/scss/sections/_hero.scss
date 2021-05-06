@@ -3,44 +3,32 @@
 ============= */
 
 #hero {
-    >div {
         img {
-            /*max-width: 100%;*/ 
-            display: block;
             width: 100%
         }
-    }
-}
 
-@include md {
-    #hero {
-        display: grid;
-        grid-template-areas: "hero-item hero-location";
-        grid-template-columns: auto auto;  
-        
-        li {
-            #hero-item {
-                grid-area: hero;
+        section{
+            @include md{
+                display: grid;
+                grid-template-columns: 16px auto 16px;
+                grid-template-areas: ". hero-content .";
+                ul{
+                    @include md{
+                        grid-area: hero-content;
+                        display: grid;
+                        grid-template-columns: 40% auto;
+                    }
+    
+                    @include lg{
+                        grid-template-columns: 50% auto;
+                    }
+    
+    
+                    li{
+                            
+                    }
+                }
             }
         }
-        li {
-            #hero-location {
-                grid-area: hero;
-            }
-        }
     }
-}    
 
-@include lg {
-    #hero-item{
-        display: grid;
-        grid-template-areas: "hero-item hero-item";
-        grid-template-columns: 50% 50%;
-    }    
-    .hero-left{
-        grid-area: display;
-    }
-    .hero-left{
-        grid-area: display;
-    }
-}

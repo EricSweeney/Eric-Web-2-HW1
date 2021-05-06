@@ -16,30 +16,32 @@
 } */
 
 #planning {
-    >div {
+    /*>div {
         ul {
             display: grid;
             gap: 16px;
         }
-    }
+    }*/
 
-    @include md {
-        section{
-            #planning-content{
-                display: grid;
-                grid-template-columns: 50% 50%;
-                grid-template-areas: "planning-content planning-content";
-            } 
-        }
-    }
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". planning .";
 
-    @include lg {
-        section{
-            #planning-content{
+    @include xl{
+        grid-template-columns: auto 1000px auto;
+    }
+    >div{
+        grid-area: planning;
+
+        ul{
+            @include md{
                 display: grid;
-                grid-template-columns: 50% 50%;
-                grid-template-areas: "planning-content planning-content";
-            } 
+                grid-template-columns: 50% auto;
+                gap: 16px;
+            }
+            li{
+
+            }
         }
     }
 }
