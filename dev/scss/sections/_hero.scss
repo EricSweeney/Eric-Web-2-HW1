@@ -6,6 +6,17 @@
         img {
             width: 100%
         }
+        background-color: #cc4539;
+        color: white;
+
+        #details{
+            h2{
+                font-family: 'Archivo Black', sans-serif;
+            }
+            p{
+                font-family: 'Archivo Black', sans-serif;
+            }
+        }
 
         section{
             @include md{

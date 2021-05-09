@@ -2,30 +2,21 @@
     Planning
 ============= */
 
-/* #planning {
-    img {
-        max-width: 100%;
-    }
-    ul {
-        li {
-            display: grid;
-            grid-template-columns: 16px auto 16px;
-            grid-template-areas: ". planning-content .";
-        }
-    }
-} */
-
 #planning {
-    /*>div {
-        ul {
-            display: grid;
-            gap: 16px;
-        }
-    }*/
+    h1{
+        font-family: 'Archivo Black', sans-serif;
+    }
 
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". planning .";
+
+    .lessons {
+        background-color: #551614;
+        color: white;
+        margin: 20px 0px;
+        padding: 20px 20px;
+    } 
 
     @include xl{
         grid-template-columns: auto 1000px auto;

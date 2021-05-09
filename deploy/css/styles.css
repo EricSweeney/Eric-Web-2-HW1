@@ -2,6 +2,8 @@
     Mixins
 ============= */
 /* ---------------- Font Sizing ---------------- */
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
 html {
   font-size: 100%;
 }
@@ -380,15 +382,31 @@ button {
     Header
 ============= */
 header {
+  background-color: #551614;
+  color: white;
+  padding: 20px 20px;
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". header-content .";
+  grid-template-areas: ". header .";
+}
+header h1 {
+  font-family: "Archivo Black", sans-serif;
+}
+header h6 {
+  font-family: "Source Sans Pro", sans-serif;
+}
+header > div {
+  grid-area: header;
 }
 
 /* =============
     Footer
 ============= */
 footer {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #551614;
+  color: white;
+  padding: 0px 0px 20px 0px;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
@@ -446,8 +464,18 @@ footer > div {
 /* =============
     hero
 ============= */
+#hero {
+  background-color: #cc4539;
+  color: white;
+}
 #hero img {
   width: 100%;
+}
+#hero #details h2 {
+  font-family: "Archivo Black", sans-serif;
+}
+#hero #details p {
+  font-family: "Archivo Black", sans-serif;
 }
 @media (min-width: 768px) {
   #hero section {
@@ -471,28 +499,19 @@ footer > div {
 /* =============
     Planning
 ============= */
-/* #planning {
-    img {
-        max-width: 100%;
-    }
-    ul {
-        li {
-            display: grid;
-            grid-template-columns: 16px auto 16px;
-            grid-template-areas: ". planning-content .";
-        }
-    }
-} */
 #planning {
-  /*>div {
-      ul {
-          display: grid;
-          gap: 16px;
-      }
-  }*/
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". planning .";
+}
+#planning h1 {
+  font-family: "Archivo Black", sans-serif;
+}
+#planning .lessons {
+  background-color: #551614;
+  color: white;
+  margin: 20px 0px;
+  padding: 20px 20px;
 }
 @media (min-width: 1200px) {
   #planning {
@@ -576,6 +595,24 @@ footer > div {
     }
 }
 */
+#new {
+  margin: 20px 0px;
+}
+#new #collection {
+  font-family: "Archivo Black", sans-serif;
+}
+#new .new-content h1 {
+  font-family: "Source Sans Pro", sans-serif;
+}
+#new .new-content p {
+  font-family: "Source Sans Pro", sans-serif;
+}
+#new .new-content {
+  display: block;
+  height: 300px;
+  padding: 10px 20px;
+  background-color: #EAEAEF;
+}
 @media (min-width: 768px) {
   #new {
     display: grid;

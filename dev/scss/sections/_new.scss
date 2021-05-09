@@ -19,6 +19,26 @@
 */
 
 #new {
+    margin: 20px 0px;
+    #collection{
+        font-family: 'Archivo Black', sans-serif;
+    }
+    .new-content{
+        h1{
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        p{
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+    }
+
+    .new-content{
+        display: block;
+        height: 300px;
+        padding: 10px 20px;
+        background-color: #EAEAEF;
+    }
+
     @include md{
         display: grid;
         grid-template-columns: 16px auto 16px;
